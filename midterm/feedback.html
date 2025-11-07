@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <title>意見回饋表單</title>
+</head>
+<body>
+    <form>
+        <p>
+            <label for="name">姓名：</label>
+            <input type="text" id="name" name="name" required>
+        </p>
+        <p>
+            <label for="email">電子郵件：</label>
+            <input type="email" id="email" name="email" required>
+        </p>
+        <p>
+            <label for="message">問題描述：</label><br>
+            <textarea id="message" name="message" rows="5" cols="40" required></textarea>
+        </p>
+        <p>
+            <label for="category">問題分類：</label>
+            <select id="category" name="category">
+                <option value="login">登入問題</option>
+                <option value="product">商品相關</option>
+                <option value="service">服務建議</option>
+                <option value="technical">技術支援</option>
+            </select>
+        </p>
+        <p>
+            <button type="submit">提交</button>
+            <button type="reset">重設</button>
+        </p>
+    </form>
+</body>
+</html>
